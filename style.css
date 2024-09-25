@@ -1,0 +1,223 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+}
+/* inscrire la typographie et les couleurs de bases */
+body {
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* Menu de navigation */
+
+nav {
+    cursor: pointer;
+}
+
+nav > ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(51, 0, 146);
+}
+
+nav ol li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Style sub-menu display none */
+nav ol li .sub-menu {
+    display: none;
+    position: absolute;
+    background: rgb(51, 0, 146);
+}
+
+nav ol li:hover {
+background: rgb(89, 0, 255);
+}
+
+nav ol li:hover .sub-menu {
+    display: block;
+    list-style: none;
+    padding-left: 0;
+}
+
+.sub-menu {
+    margin-top: 15px;   
+    width: 150px;
+}
+
+.sub-menu li {
+    border-top: 1px solid white;
+}
+
+
+
+nav ol li a:active {
+    color: blue;
+}
+
+/* Style pour le corps principal */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulaire */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table, th, td {
+    border: 1px solid #494949;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+    color: black; /* Ajouté pour définir explicitement la couleur du texte */
+}
+
+th {
+    background-color: #818181;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #3b3ffc;
+    color: rgb(159, 161, 255); /* Ajouté pour rendre le texte visible sur la ligne survolée */
+}
+
+tr[onclick] {
+    cursor: pointer;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+
+.match-container {
+    width: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.match-header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.match-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.match-table th, .match-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.match-table th {
+    background-color: #f2f2f2;
+}
+.match-table td {
+    background-color: #f9f9f9;
+}
+.winner {
+    color: #28a745;
+    font-weight: bold;
+}
+.prochain-tour-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clickable-header {
+    color: #007BFF;
+}
+
+.clickable-header:hover {
+    color: #003975;
+    cursor: pointer;
+}
+
